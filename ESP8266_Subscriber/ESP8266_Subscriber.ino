@@ -32,6 +32,7 @@ void setup()
 {
   Serial.begin(115200);
   WiFi.begin(ssid, pass);
+  // Use your Broker ip address
   client.begin("192.168.1.8", net); // Begin client with broker Ip and wifi client
 
   connect();
